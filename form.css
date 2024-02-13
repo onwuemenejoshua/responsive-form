@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  background-image: url("bg-intro-mobile.png");
+  background-color: rgba(255, 122, 122, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "Poppins", "sans-serif";
+  padding: 3rem;
+}
+
+#totalForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2,
+p {
+  text-align: center;
+}
+
+#form {
+  width: 50%;
+}
+
+button {
+  background-color: rgba(96, 85, 165, 0.8);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+#form {
+  width: fit-content;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+form p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  width: 90%;
+  border: 2px solid rgba(218, 217, 232, 1);
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus {
+  border: 2px solid rgba(119, 115, 140, 0.5);
+  outline: none !important;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+
+input#submit {
+  background-color: rgba(56, 204, 140, 1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  border: none;
+  width: 50%;
+  align-items: center;
+}
+
+#click {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 13px;
+}
+
+span {
+  color: rgba(255, 0, 0, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("bg-intro-desktop.png");
+    padding: 3rem;
+  }
+
+  #totalForm {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  #content {
+    width: 50%;
+  }
+
+  #form {
+    width: 50%;
+    margin-right: 10%;
+    margin-top: 35px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
